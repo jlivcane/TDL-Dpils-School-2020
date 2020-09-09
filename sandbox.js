@@ -129,52 +129,50 @@ return total;
     people.forEach(person => {
         console.log(person);
     });
-*/
+
 
 // Objects
 
 let user = {
-    name: 'Deniss',
-    age: 30,
-    email: 'deniss@gmail.com',
-    location: 'Latvia',
-    blogs: ['Why 2020 is the best year', 'Why burgers are good'],
-    login: function(){
-        console.log('The user logged in');
-    },
-    logout(){
-        console.log('The user logged out');
-    },
-    logBlogs: function(){
-        console.log(this);
-       
-    }
+  name: "Deniss",
+  age: 30,
+  email: "deniss@gmail.com",
+  location: "Latvia",
+  blogs: ["Why 2020 is the best year", "Why burgers are good"],
+  login: function () {
+    console.log("The user logged in");
+  },
+  logout() {
+    console.log("The user logged out");
+  },
+  logBlogs: function () {
+    console.log(this);
+  },
 };
 
 console.log(this.blogs);
 
 console.log(user.blogs);
 
+user.name = "Alex";
+console.log(user.login(), user.name);
 
-user.name = 'Alex';
-console.log(user.login(),user.name);
-
-const key = 'age';
+const key = "age";
 console.log(user[key]);
 
 //Create object
 
 let car = {
-    brand: 'AUDI',
-    model: "A8",
-    year: '2015',
+  brand: "AUDI",
+  model: "A8",
+  year: "2015",
 
-    methodOne(){
-        console.log('Your car is cool');
-    },
-    methodTwo(){
-        console.log('Your car is not cool');
-    }
+  methodOne() {
+    console.log("Your car is cool");
+  },
+  methodTwo() {
+    console.log("Your car is not cool");
+  },
 };
 
 console.log(car.methodOne(), car.brand);
@@ -198,42 +196,82 @@ const random = Math.random();
 console.log(random);
 console.log(Math.round(random * 100));
 
-let array = [{name: 'Deniss', age: 27}, {name: 'Max', age: 23}];
-console.log(array[0].name)
+let array = [
+  { name: "Deniss", age: 27 },
+  { name: "Max", age: 23 },
+];
+console.log(array[0].name);
 
 let letters = [
-    {title: 'N', score: 1},
-    {title: 'K', score: 5},
-    {title: 'Z', score: 10},
-    {title: 'X', score: 8},
-    {title: 'D', score: 2},
-    {title: 'A', score: 1},
-    {title: 'E', score: 1},
-
+  { title: "N", score: 1 },
+  { title: "K", score: 5 },
+  { title: "Z", score: 10 },
+  { title: "X", score: 8 },
+  { title: "D", score: 2 },
+  { title: "A", score: 1 },
+  { title: "E", score: 1 },
 ];
 
-
 const sumOfScores = (scores) => {
-    let total = 0;
-    for (let i = 0; i < scores.length; i++){
-      total += scores[i].score
-    }
-    return total;
-}
-    
-    console.log(sumOfScores(letters));
+  let total = 0;
+  for (let i = 0; i < scores.length; i++) {
+    total += scores[i].score;
+  }
+  return total;
+};
 
+console.log(sumOfScores(letters));
 
-    // primitive type vs reference type
-
-
-
-
+// primitive type vs reference type
 
 //primitive types
 //numbers, strings, booleans
 
+let rectangle = {};
+rectangle.edge1 = 3;
+rectangle.edge2 = 5;
+let circle = {};
+circle.radius = 5;
+let square = {};
+square.edge = 5;
 
+getArea()
+getInfo()
 
+function getCircleArea(circle.radius) {
+return Math.PI * circle.radius**
+};
 
+function getSquareArea(edge) {
+return square.edge**
+};
+*/
 
+function calculateRectangleArea(x, y) {
+  return x * y;
+}
+
+function calculateCircleArea(x) {
+  return Math.PI * x * x;
+}
+
+function calculateSquareArea(x) {
+  return x * x;
+}
+
+if (calculateRectangleArea.name === true)
+  (function calculateRectangleArea(x, y) {
+    return [x * y];
+  });
+if (calculateSquareArea.name === true)
+  (function calculateSquareArea(x) {
+    return [x * x];
+  });
+else
+  (function calculateCircleArea(x) {
+    return [Math.PI * x * x];
+  });
+
+console.log(calculateRectangleArea(10, 5));
+console.log(calculateSquareArea(10));
+console.log(calculateCircleArea(10));

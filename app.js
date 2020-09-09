@@ -111,7 +111,7 @@ fs.writeFile ('./docs/tmpPassword.txt', 'password', (error) => {
     }
 })
 };
-*/
+
 
 
 //streams and buffers
@@ -128,6 +128,15 @@ readStream.on('data', (buffer) => {
 })
 
 
-
-
-
+module.exports = function(){
+    return 'hello';
+}
+*/
+module.exports = {
+  sayhello() {
+    return "hello";
+  },
+  addNumbers(value1, value2) {
+    return value1 + value2;
+  },
+};
