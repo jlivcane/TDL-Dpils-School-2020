@@ -246,6 +246,8 @@ function getSquareArea(edge) {
 return square.edge**
 };
 */
+let x = 4;
+let y = 8;
 
 function calculateRectangleArea(x, y) {
   return x * y;
@@ -272,6 +274,8 @@ else
     return [Math.PI * x * x];
   });
 
-console.log(calculateRectangleArea(10, 5));
-console.log(calculateSquareArea(10));
-console.log(calculateCircleArea(10));
+console.log(calculateRectangleArea(x, y));
+console.log(calculateSquareArea(x));
+console.log(calculateCircleArea(x));
+
+
