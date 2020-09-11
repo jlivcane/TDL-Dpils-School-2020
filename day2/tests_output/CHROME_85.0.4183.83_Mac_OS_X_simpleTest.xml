@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="simpleTest"
+    errors="1" failures="0" hostname="" id="" package="simpleTest" skipped="0"
+    tests="1" time="16.81" timestamp="">
+  
+    <testcase name="function" classname="simpleTest" time="16.81" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;#introAgreeButton&gt;: " type="error"><![CDATA[
+    NoSuchElementError: An error occurred while running .click() command on &lt;#introAgreeButton&gt;: 
+    at ClickElement.noSuchElementError (/Users/siatestdevlab/Desktop/JS school project/TDL-Dpils-School-2020/day2/node_modules/nightwatch/lib/element/command.js:370:12)
+    at Object.errorHandler (/Users/siatestdevlab/Desktop/JS school project/TDL-Dpils-School-2020/day2/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (/Users/siatestdevlab/Desktop/JS school project/TDL-Dpils-School-2020/day2/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        NoSuchElementError: An error occurred while running .click() command on &lt;#introAgreeButton&gt;: 
+   {&#34;sessionId&#34;:&#34;d272140c01236b2924165a6441cd68ce&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
